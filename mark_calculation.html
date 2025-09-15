@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        input,button{
+            margin: 10px;
+            padding: 15px;
+            border-radius: 9%;
+            border: 2px red solid;
+        }
+        fieldset{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 10px;
+            border: 3px black solid;
+            border-radius: 5%;
+            background-color: aqua;
+            
+           
+        }
+        legend{
+            margin-left: 40%;
+            font-size:25px ;
+        }
+        label{
+         
+            font-size:30px ;
+            background:linear-gradient(135deg,red,blue,violet,red) ;
+            background-clip: text;
+            color: transparent;
+        }
+       
+            
+        
+    </style>
+</head>
+<body>
+   
+    <fieldset>
+       
+        <legend><h1><b><label>calculator</label></b></h1></legend>
+        <center>
+<label>NUM1:</label><input id="one"><br>
+<label>NUM2:</label><input id="two"><br>
+<label>NUM3:</label><input id="five"><br>
+<label>NUM4:</label><input id="six"><br>
+<label>NUM5:</label><input id="sev"><br>
+<button onclick="add()">add</button>
+<button onclick="sub()">sub</button>
+<button onclick="mul()">mul</button>
+<button onclick="markcal()">markcal</button><br>
+<label>RESULT:</label><button id="three">res</button><br>
+<label>AVERAGE:</label><button id="four">avg</button><br>
+</center>
+</fieldset>
+<script>
+ 
+
+   
+    function add(){
+        var box1=document.getElementById("one")
+    var box2=document.getElementById("two")
+    var box5=document.getElementById("five")
+        var box6=document.getElementById("six")
+        var box7=document.getElementById("sev")
+    var box3=document.getElementById("three")
+    var box4=document.getElementById("four")
+        var val1=Number(box1.value)
+        var val2=Number(box2.value)
+        var val3=Number(box5.value)
+        var val4=Number(box6.value)
+        var val5=Number(box7.value)
+        var tot=val1+val2+val3+val4+val5
+        box3.textContent=tot
+
+    }
+    function sub(){
+        var box1=document.getElementById("one")
+    var box2=document.getElementById("two")
+    var box5=document.getElementById("five")
+        var box6=document.getElementById("six")
+        var box7=document.getElementById("sev")
+    var box3=document.getElementById("three")
+    var box4=document.getElementById("four")
+        var val1=Number(box1.value)
+        var val2=Number(box2.value)
+        var val3=Number(box5.value)
+        var val4=Number(box6.value)
+        var val5=Number(box7.value)
+       var tot=val1-val2-val3-val4-val5;
+        box3.textContent=tot
+
+    }
+    function mul(){
+        var box1=document.getElementById("one")
+    var box2=document.getElementById("two")
+    var box5=document.getElementById("five")
+        var box6=document.getElementById("six")
+        var box7=document.getElementById("sev")
+    var box3=document.getElementById("three")
+    var box4=document.getElementById("four")
+        var val1=Number(box1.value)
+        var val2=Number(box2.value)
+        var val3=Number(box5.value)
+        var val4=Number(box6.value)
+        var val5=Number(box7.value)
+        var tot=val1*val2*val3*val4*val5
+        box3.textContent=tot
+
+    }
+    function markcal(){
+        var box1=document.getElementById("one")
+    var box2=document.getElementById("two")
+    var box5=document.getElementById("five")
+        var box6=document.getElementById("six")
+        var box7=document.getElementById("sev")
+    var box3=document.getElementById("three")
+    var box4=document.getElementById("four")
+        var val1=Number(box1.value)
+        var val2=Number(box2.value)
+        var val3=Number(box5.value)
+        var val4=Number(box6.value)
+        var val5=Number(box7.value)
+        tot=val1+val2+val3+val4+val5;
+        per=tot/5;
+        box3.textContent=tot
+        box4.textContent=per
+
+    }
+</script>
+    
+</body>
+</html>
+
